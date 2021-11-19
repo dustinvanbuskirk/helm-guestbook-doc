@@ -24,7 +24,6 @@ https://github.com/kubernetes-sigs/kustomize/blob/master/api/types/helmchartargs
 |helmCharts.valuesFile|Accepts a string. ValuesFile is a local file path or a remote URL to a values file to use instead of the default values that accompanied the chart. The default values are in CHART_HOME/NAME/values.yaml.|
 |helmCharts.valuesMerge|Accepts merge, override, (default), or replace. ValuesMerge specifies how to treat ValuesInline with respect to Values.|
 |helmCharts.includeCRDs|Accepts true or false. Specifies if Helm should also generate CustomResourceDefinitions. The default value is false.|
-```
 
 You update argo-server and argocd-repo-server deploys with Docker images build from Dockerfile in this repository.
 
