@@ -1,7 +1,5 @@
 # ArgoCD using Kustomize w/ Helm Charts
 
-This example is using an updated version of the helm generator released with v4.1.0 ... Dockerfile below is to build argocd-server Docker image with v4.4.1 which is a newer version that enables this generator.
-
 Kustomize Release Notes on Helm generator: https://newreleases.io/project/github/kubernetes-sigs/kustomize/release/kustomize/v4.1.0
 
 Helm Generator options:
