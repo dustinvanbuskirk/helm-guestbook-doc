@@ -23,12 +23,6 @@ https://github.com/kubernetes-sigs/kustomize/blob/master/api/types/helmchartargs
 |helmCharts.valuesMerge|Accepts merge, override, (default), or replace. ValuesMerge specifies how to treat ValuesInline with respect to Values.|
 |helmCharts.includeCRDs|Accepts true or false. Specifies if Helm should also generate CustomResourceDefinitions. The default value is false.|
 
-You update argo-server and argocd-repo-server deploys with Docker images build from Dockerfile in this repository.
-
-This Dockerfile is intended to update Kustomize binary version.
-
-After this is updated you can implement the following kustomization.yaml.
-
 ``` kustomization.yaml
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
