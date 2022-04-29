@@ -5,6 +5,18 @@ Kustomize Release Notes on Helm generator: https://newreleases.io/project/github
 Helm Generator options:
 https://github.com/kubernetes-sigs/kustomize/blob/master/api/types/helmchartargs.go
 
+To enable you must specify the --enable-helm flag.
+
+If you're managing ArgoCD via Codefresh Runtime you will need to commit the flag to your kustomization.yaml
+
+In your Codefresh Runtime GIT repository edit bootstrap/argo-cd/kustomization.yaml
+
+Adding the entry below under `literals`
+
+```
+- kustomize.buildOptions=--enable-helm
+```
+
 ## Helm Generator fields
 
 | FIELD | DESCRIPTION |
